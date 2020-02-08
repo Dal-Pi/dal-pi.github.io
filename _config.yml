@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "달피"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "검색해서 쉽게 찾은 코드들은 쉽게 잊어버리고 필요할때 다시 검색하게 되더라. 그래서 기록해 두려고 만든 개인 페이지." #"I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
@@ -127,7 +127,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Dal-Pi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: https://github.com/Dal-Pi
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
