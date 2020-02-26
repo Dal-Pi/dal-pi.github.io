@@ -13,7 +13,7 @@ last_modified_at: 2020-02-26T02:00:00-05:00
 ---
 
 ## 파일에서 읽기
-'''cpp
+```cpp
 ifstream ifs("input.txt"); // 생성자에서 파일을 연다 확인은 is_open()으로
 ofstream ofs("output.txt");
 
@@ -25,4 +25,4 @@ getline(ifs, inputStr); // 한 줄을 얻어오고 싶을 때
 
 string outputStr("Output String");
 ofs << outputStr; // cout 처럼 파일에 출력할 수 있다
-'''
+```
