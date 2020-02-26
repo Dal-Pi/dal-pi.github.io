@@ -12,6 +12,8 @@ tags:
 last_modified_at: 2020-02-26T02:00:00-05:00
 ---
 
+잡다한 std::string 사용법
+
 ## 파일에서 읽기
 ```cpp
 ifstream ifs("input.txt"); // 생성자에서 파일을 연다 확인은 is_open()으로
