@@ -8,11 +8,10 @@ tags:
   - DesignPattern
 ---
 
-C++11에서 간단하게 Singleton 구현하기
+C++11에서 간단하게 Singleton 구현하기  
 
-Singleton은 인스턴스가 항상 한 개만 존재하도록 하는 유명한 패턴이다.
-구현에서 가장 유의할 점은 Singleton 인스턴스가 생성되는 부분의 동기화 문제인데 이에 대해서는 정말 많은 기술들이 존재한다.
-하지만 동기화 문제의 위험이 적을 때는 아래와 같이 구성하면 간단하게 Singleton의 원자(atomic)성을 얻을 수 있다.
+## 객체 생성
+C++11부터 아래와 같이 작성하면 간단하게 Singleton이 구현된다.
 ```cpp
 class Singleton
 {
@@ -24,14 +23,14 @@ public:
     }
 };
 ```
-가능한 이유는 C+11의 아래 규칙 때문이다
+이게 가능한 이유는 C+11의 아래 규칙 때문이다.
+> 정적 지역변수의 초기화가 멀티스레드 환경에서도 한 번만 수행됨이 보장된다.  
+원문은 이렇다.
 > If control enters the declaration concurrently while the variable is being initialized, the concurrent execution shall wait for completion of the initialization.
-
-정적 지역변수의 초기화가 멀티스레드에서 한 번만 일어난다는 내용으로 언어차원에서 이를 보장한다
 
 물론 클래스의 생성자 내에서 또 다른 복잡한 동기화 문제가 있거나 언어 표준을 확실하게 지원하지 않는 환경에서는 지원되지 않을 수 있다.
 
-위의 코드는 동기화 문제에 대한 부분만이므로 "컴파일러가 자동으로 만들어 주는 함수들"이나 상속에 대한 부분 까지 신경쓰면 아래와 같이 구성할 수 있다. 
+위의 코드는 동기화 문제에 대한 부분만이므로 "컴파일러가 자동으로 만들어 주는 함수들(Effective C++ 참고)"이나 상속에 대한 부분 까지 신경쓰면 아래와 같이 구성할 수 있다.
 간단한 Singleton을 구성할 때 유용하다.
 ```cpp
 class Singleton
@@ -54,5 +53,4 @@ protected:
 };
 ```
 
-하지만 한 가지, Singleton은 안쓰는게 제일 좋다.
-어디서나 getInstance로 가져다 쓰는 점이 전역변수와 유사하며 이로 인해 테스팅하는데 많은 어려움을 주기 때문이다.
+하지만 Singleton은 역시 쓰지 않는 것이 제일 좋다.
