@@ -1,5 +1,5 @@
 ---
-title: "Main Page"
+title: "About Blog"
 permalink: /about/
 layout: single
 ---
