@@ -9,9 +9,9 @@ tags:
   - googletest
 ---
 Singleton은 인터페이스를 통해 추상화하지 않고 해당 클래스를 그대로 참조하므로 mock을 만드는데 어려움이 있다.  
-[#MockingNonVirtualMethods](https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#mocking-non-virtual-methods-mockingnonvirtualmethods) 를 활용하면 template를 통해 가능하게 할 수 있다.
+[#MockingNonVirtualMethods](https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#mocking-non-virtual-methods-mockingnonvirtualmethods) 를 활용하면 template를 통해 mocking이 가능하도록 만들 수 있다.
 
-## Class 이름이 typename이 되도록 수정하기
+## 1. Class 이름이 typename이 되도록 수정하기
 
 일단 Singleton과 이를 사용하는 User에 대한 코드이다.
 ```cpp
@@ -53,7 +53,7 @@ public:
 };
 ```
 
-## typename에 맞게 mocking하기
+## 2. typename에 맞게 mocking하기
 
 [간단한 Singleton 작성하기](https://dal-pi.github.io/c++/001-cpp-singleton/)를 사용해서 getInstance() 를 만들어주고 테스트할 함수인 callFunction()을 mocking 해 준다.
 ```cpp
