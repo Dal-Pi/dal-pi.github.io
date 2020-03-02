@@ -22,7 +22,7 @@ public:
 };
 ```
 이게 가능한 이유는 C+11의 아래 규칙 때문이다.
-> 정적 지역변수의 초기화가 멀티스레드 환경에서도 한 번만 수행됨이 보장된다.
+> C++11에서 정적 지역변수의 초기화는 멀티스레드 환경에서도 한 번만 수행되어야 한다.
 
 원문은 이렇다.
 > If control enters the declaration concurrently while the variable is being initialized, the concurrent execution shall wait for completion of the initialization.
