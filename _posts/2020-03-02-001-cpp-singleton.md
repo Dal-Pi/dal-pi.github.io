@@ -8,10 +8,8 @@ tags:
   - DesignPattern
 ---
 
-C++11에서 간단하게 Singleton 구현하기  
-
-## 객체 생성
-C++11부터 아래와 같이 작성하면 간단하게 Singleton이 구현된다.
+## C++11에서 간단하게 Singleton 구현하기
+아래와 같이 작성하면 간단하게 Singleton이 구현된다.
 ```cpp
 class Singleton
 {
@@ -24,7 +22,8 @@ public:
 };
 ```
 이게 가능한 이유는 C+11의 아래 규칙 때문이다.
-> 정적 지역변수의 초기화가 멀티스레드 환경에서도 한 번만 수행됨이 보장된다.  
+> 정적 지역변수의 초기화가 멀티스레드 환경에서도 한 번만 수행됨이 보장된다.
+
 원문은 이렇다.
 > If control enters the declaration concurrently while the variable is being initialized, the concurrent execution shall wait for completion of the initialization.
 
@@ -53,4 +52,4 @@ protected:
 };
 ```
 
-하지만 Singleton은 역시 쓰지 않는 것이 제일 좋다.
+하지만 역시 Singleton은 쓰지 않는 것이 제일 좋다.
