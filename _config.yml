@@ -20,7 +20,7 @@ title                    : "Study Room"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "달피"
-description              : "공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지."
+description              : "(desc)공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지."
 url                      : "https://dal-pi.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "달피"
   avatar           : "assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지." #"I am an **amazing** person."
+  bio              : "(bio)공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지." #"I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
