@@ -23,7 +23,7 @@ public:
         static Singleton instance;
         return instance;
     }
-    void callFunction() { /*do somting*/ } //테스트하고자 하는 함수, 심지어 가상함수도 아니다.
+    void callFunction() { /*do something*/ } //테스트하고자 하는 함수, 심지어 가상함수도 아니다.
 };
 ```
 ```cpp
