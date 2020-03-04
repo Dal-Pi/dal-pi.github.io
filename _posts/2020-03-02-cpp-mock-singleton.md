@@ -14,6 +14,7 @@ Singleton은 인터페이스를 통해 추상화하지 않고 해당 클래스�
 ## 1. Class 이름이 typename이 되도록 수정하기
 
 일단 Singleton과 이를 사용하는 User에 대한 코드이다.
+Singleton에 대한 구현은 [간단한 Singleton 작성하기](https://dal-pi.github.io/c++/cpp-singleton/)를 참고
 ```cpp
 class Singleton
 {
@@ -55,7 +56,7 @@ public:
 
 ## 2. typename에 맞게 mocking하기
 
-[간단한 Singleton 작성하기](https://dal-pi.github.io/c++/001-cpp-singleton/)를 사용해서 getInstance() 를 만들어주고 테스트할 함수인 callFunction()을 mocking 해 준다.
+동일하게 동작하도록 getInstance() 를 만들어주고 테스트할 함수인 callFunction()을 mocking 해 준다.
 ```cpp
 class MockSingleton //Singleton을 상속받는 것이 아니다!
 {
