@@ -1,3 +1,4 @@
+```cpp
 class Base
 {
 public:
@@ -26,3 +27,11 @@ public:
 
 int main(int argc, char *argv[]) 
 {
+    Derived derived;
+    derived.foo();
+
+    Base* pBase = &derived;
+    pBase->foo();
+    return 0
+}
+```
