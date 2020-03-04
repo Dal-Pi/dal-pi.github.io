@@ -1,6 +1,6 @@
 ---
 title: "[C++] 기본 매개변수(Default Parameter)가 있는 함수의 상속"
-date: 2020-03-02 16:00:00 -0400
+date: 2020-03-04 16:00:00 -0400
 categories:
   - C++
 tags:
