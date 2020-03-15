@@ -6,7 +6,7 @@ categories:
 tags:
   - Agile
   - Scrum
-layout: single
+classes: wide
 ---
 
 스크럼이 무엇이며 왜 해야하는지, 그리고 어떻게 하는지에 대한 정리.
