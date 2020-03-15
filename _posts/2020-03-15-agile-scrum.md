@@ -17,14 +17,14 @@ tags:
 >> agile  
 >> 1.날렵한, 민첩한   2.(생각이) 재빠른, 기민한
 
-
-
 스크럼은 프로세스 도구 중 하나로, 역할을 규정하며, 기간이 고정된 이터레이션을 규정하여 경험적으로 프로젝트를 관리해 나가는 방법이다.
+
+<img src="/assets/images/scrum/scrum_board.png" height="200"> <img src="/assets/images/scrum/scrum_board2.png" height="200">
 
 <br/><br/><br/><br/><br/>
 
 ## 스크럼은 왜 하는가?
-![](/assets/images/scrum/srcum_why.png)
+![](/assets/images/scrum/scrum_why.png)
 - 계획한 대로 일이 진행되지 않음 : 스프린트 마다 계획과 프로세스를 수정하며 개선
 - 요구사항이 수시로 바뀜 : 스프린트 백로그/제품 시연을 통해 백로그를 관리하고 한 회의 스프린트동안에는 백로그 추가를 허용하지 않음
 - 자신의 능력으로 할 수 없는 일들에 막혀 있음 : 계획 회의/일일 미팅/회고 회의를 통해 팀원들간의 협력을 도모
@@ -40,7 +40,7 @@ tags:
 
 ## 스크럼은 어떻게 하는가?
 ### 스크럼 프레임워크
-![](/assets/images/scrum/scrum_ramework.png)
+![](/assets/images/scrum/scrum_framework.png)
 1. 제품에서 요구하는 기능과 우선순위를 제품 백로그로 정한다.
 2. PO가 정한 제품의 우선순위에서 어디까지 작업을 할지 팀과 조율 한다. 조율하여 선정된 제품 백로그가 이번 스프린트의 목표가 된다.
 3. 스프린트 목표를 구현 가능 하도록 팀에서 스프린트 백로그를 작성한 뒤 작업을 할당한다.
@@ -52,21 +52,41 @@ tags:
 <br/><br/><br/>
 
 ### 스프린트(Sprint)
+> sprint
+> 1.(짧은 거리를) 전력 질주하다   2.(달리기수영 등의) 단거리 경기   3.전력 질주
+
+스크럼에서 스프린트란 **반복적인 개발 주기** 를 뜻한다. 한 스프린트 내에서는 아래의 단계를 거친다.
+
+<br/><br/>
+
 #### 1. 스프린트 계획 회의 (Sprint Planning Meeting) : 스프린트가 끝나고 다음 스프린트의 시작 전
 ![](/assets/images/scrum/con_planning_req.png) ![](/assets/images/scrum/con_planning_add_issue.png) <br/>
 - 스프린트 목표와 스프린트 백로그를 계획하는 회의
+- 세부적으로 어떤 것을 구현해야 하는지에 대한 세부 작업 항목, 작업자, 예상 작업 시간 등을 수립
+
+<br/><br/>
 
 #### 2. 일일 스크럼 회의(Daily Scrum Meeting) - 매일 정해진 시간에, 일반적으로 15분
 <img src="/assets/images/scrum/scrum_daily.png" height="200"> <img src="/assets/images/scrum/scrum_daily_flank.png" height="200"> <br/>
-![](/assets/images/scrum/con_daily_error.png) ![](/assets/images/scrum/con_daily_conflict.png)
-- 날마다 진행되는 미팅. (어제 한일, 오늘 할일, 장애 현상 등을 공유)
+- 매일 정해진 시간에 일어서서 한다.
+- 모든 팀원이 참석한다.
+- 스프린트 현황판에 대한 업데이트를 진행한다.
+- 한 사람씩 어제 한 일과 오늘 할 일을 이야기하며 어려운 점이 있다면 이야기한다.
+- 되도록 짧게 (일반적으로 15분) 한다.
+
+<br/><br/>
 
 #### 3. 스프린트 검토 회의 (Sprint Review) - 매 회 스프린트 종료 전
 ![](/assets/images/scrum/con_review.png) <br/>
-- 고객이 요구했던 사항에 얼마나 부합하는지 참석자(고객포함)들 앞에서 시연. 개선할 점 등에 관해 피드백을 받는다
+- 고객이 요구했던 사항에 얼마나 부합하는지 참석자(고객포함)들 앞에서 시연한다.
+- 개선할 점 등에 관해 피드백을 받는다
+
+<br/><br/>
 
 #### 4. 스프린트 회고 회의 (Sprint Retrospective) - 매 회 스프린트 종료 후 다음 스프린트 계획 회의 전
 ![](/assets/images/scrum/con_retrospective.png) <br/>
-- 그동안 스프린트에서 수행한 활동과 개발한 것을 되돌아 보고, 개선점은 없는지, 팀이 정한 규칙이나 표준을 잘 준수했는지 검토
+- 그동안 스프린트에서 수행한 활동과 개발한 것을 되돌아 보고, 개선점은 없는지, 팀이 정한 규칙이나 표준을 잘 준수했는지 검토한다.
 - 단점보다는 강점을 찾아 극대화 시키는데 주안점을 둠
 - 문제점을 확인하고 기록하는 정도로만 진행함.(문제점의 해결 방안을 찾는 회의가 아님)
+
+<br/><br/>
