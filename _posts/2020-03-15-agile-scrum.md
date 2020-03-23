@@ -11,7 +11,7 @@ tags:
 스크럼이 무엇이며 왜 해야하는지, 그리고 어떻게 하는지에 대한 정리.
 
 ## 스크럼이란 무엇인가?
-<img src="/assets/images/scrum/scrum_origin.png" height="200">
+<img src="/assets/images/scrum/scrum_origin.png" height="200"><br/>(미식축구의 포지션 이름에서 유래되었다)
 
 > 스크럼(Scrum)은 프로젝트관리를 위한 상호, 점진적 개발 방법론이며, 애자일(Agile) 소프트웨어 공학 중의 하나입니다. 스크럼은 소프트웨어 개발 프로젝트를 위하여 고안되었지만, 소프트웨어 유지보수 팀이나 일반적인 프로젝트/프로그램 관리에서도 적용될 수 있습니다. - 위키백과 
 >> **agile**  
@@ -21,6 +21,7 @@ tags:
 스크럼은 프로세스 도구 중 하나로, 역할을 규정하며, 기간이 고정된 이터레이션을 규정하여 경험적으로 프로젝트를 관리해 나가는 방법이다.
 
 <img src="/assets/images/scrum/scrum_board.png" height="200"> <img src="/assets/images/scrum/scrum_board2.png" height="200">
+<br/>(누구나 한 번쯤 봤을법한 스크럼 보드)
 
 <br/><br/><br/><br/><br/>
 
@@ -74,7 +75,8 @@ tags:
 <br/><br/>
 
 #### 2. 일일 스크럼 회의(Daily Scrum Meeting) - 매일 정해진 시간에, 일반적으로 15분
-<img src="/assets/images/scrum/scrum_daily.png" height="200"> <img src="/assets/images/scrum/scrum_daily_flank.png" height="200"> <br/>
+<img src="/assets/images/scrum/scrum_daily.png" height="200"> <img src="/assets/images/scrum/scrum_daily_flank.png" height="200">
+<br/>(일반적인 일일 스크럼과 미팅 시간을 획기적으로 줄여주는 일일 스크럼 방법) 
 - 매일 정해진 시간에 일어서서 한다.
 - 모든 팀원이 참석한다.
 - 스프린트 현황판에 대한 업데이트를 진행한다.
@@ -98,4 +100,4 @@ tags:
 
 <br/><br/>
 
-(5th)
+
