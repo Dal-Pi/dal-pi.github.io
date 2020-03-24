@@ -15,4 +15,6 @@ tags:
 일본어로 간판 이란 뜻이 어원으로 눈에 보이는 기록을 통해 제품을 개발하는 방법을 말한다.<br/>
 많이 알려진 Scrum[(Scrum이란? 참조)](https://dal-pi.github.io/agile/agile-scrum/)에 비해 Kanban은 조금 더 규범적이지 않은(rule이 적은) 개발 방법론이라고 할 수 있다.
 
+![](/assets/images/kanban/kanban_board.png)
+
 (TBD)
