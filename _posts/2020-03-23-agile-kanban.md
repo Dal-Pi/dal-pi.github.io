@@ -9,6 +9,7 @@ tags:
 ---
 
 [Scrum](https://dal-pi.github.io/agile/agile-scrum/)대비 Kanban의 차이
+기본적으로 스크럼이 많이 알려진 방법론이지만 현재 업무에서는 칸반을 사용하고 있어 이에 대하여 정리해 보았다.
 
 ## 칸반(Kanban) 이란?
 
