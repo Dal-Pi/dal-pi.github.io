@@ -50,6 +50,8 @@ Derived::foo() called
 레퍼런스를 통한 다형성의 구현은 스마트포인터를 사용한 구현의 문제점을 해결하는데 사용할 수 있다.  
 아래의 `MyClass`에서 `shared_ptr`로 `Base`의 다형성을 사용하려는데 `Derived`가 `singleton`인 경우를 생각하면 아래와 같은 문제가 발생할 수 있다.
 ```cpp
+//(Base)
+
 class Derived : public Base {
 public:
     static Derived& getInstance() {
@@ -83,7 +85,8 @@ int main() {
 raw pointer를 사용해도 해결이 되지만 raw pointer의 사용을 지양하고자 하면(애초에 smart pointer는 raw pointer를 사용하지 않기 위해 사용하기에)  
 레퍼런스를 사용하면 좋은 해결 방안이 된다.
 ```cpp
-//(...)
+//(Base)
+//(Derived)
 
 class MyClass {
 public:
