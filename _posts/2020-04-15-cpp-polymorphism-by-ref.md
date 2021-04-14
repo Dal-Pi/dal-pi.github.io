@@ -83,7 +83,8 @@ int main() {
 raw pointer를 사용해도 해결이 되지만 raw pointer의 사용을 지양하고자 하면(애초에 smart pointer는 raw pointer를 사용하지 않기 위해 사용하기에)  
 레퍼런스를 사용하면 좋은 해결 방안이 된다.
 ```cpp
-(...)
+//(...)
+
 class MyClass {
 public:
     MyClass(Base& base) : mBase(base) {}
