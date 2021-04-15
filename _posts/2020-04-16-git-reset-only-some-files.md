@@ -1,5 +1,5 @@
 ---
-title: "[git] 레퍼런스로 다형성 사용하기"
+title: "[git] 하나의 파일만 hard reset하기"
 date: 2021-04-16 00:30:00 +0900
 categories:
   - git
