@@ -9,7 +9,7 @@ tags:
 make_shared with private constructor  
 
 `std::enable_shared_from_this` 을 사용하거나 `std::shared_ptr`을 사용하여 객체를 생성하고자 할 때 아래의 create() 와 같은 factory method를 사용하곤 한다.
-```
+```cpp
 class A {
 public:
     static shared_ptr<A> create() {
@@ -24,7 +24,7 @@ int main() {
 }
 ```
 이 때 `std::shared_ptr`대신 예외 안정성이 높은 `std::make_shared`를 사용하는 경우 해당 클래스의 생성자가 private라면 컴파일 에러가 발생한다.  
-```
+```cpp
 static shared_ptr<A> create() {
     return make_shared<A>();
 }
@@ -34,7 +34,7 @@ static shared_ptr<A> create() {
 ```
 에러가 나는 이유는 `std::make_shared`는 함수 template 이며 A의 범위 밖에 있으므로 private영역을 볼 수 없기 때문이다.  
 최대한 간단한 형태로(실제로 더 복잡함) `std::make_shared`를 구성해보면 함수에 전달되는 `args`를 `T`에 그대로 perfect-forwarding하고 있음을 알 수 있다.
-```
+```cpp
 template< class T, class... Args >
 shared_ptr<T> make_shared( Args&&... args ) {
     return new T(std::forward<Args>(args)...);
@@ -42,7 +42,7 @@ shared_ptr<T> make_shared( Args&&... args ) {
 ```
   
 어떻게든 `std::make_shared`를 쓰고 싶은(당신의 코드에서 모든 new 키워드가 보이지 않도록 하고 싶은) 경우에는 간단한 wrapper를 통해 동작하게 할 수 있다.  
-```
+```cpp
 class A {
 public:
     static shared_ptr<A> create() {
