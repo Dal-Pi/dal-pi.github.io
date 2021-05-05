@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "달피"
   avatar           : "assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지." #"I am an **amazing** person."
+  bio              : "공부한 것들을 가장 간단한 예제로 기록해 두려고 만든 개인 페이지.\n블로그 이동 중(https://velog.io/@dal-pi)" #"I am an **amazing** person."
   location         : "101"
   email            : "kania707@gmail.com"
   links:
